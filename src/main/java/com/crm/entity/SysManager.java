@@ -31,6 +31,9 @@ public class SysManager {
     @TableField("status")
     private Integer status;
 
+    @TableField("depart_id")
+    private Integer departId;
+
     @TableField(value = "delete_flag", fill = FieldFill.INSERT)
     @TableLogic
     private Integer deleteFlag;
@@ -40,4 +43,5 @@ public class SysManager {
 
     @TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updateTime;
+
 }
