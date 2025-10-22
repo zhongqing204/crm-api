@@ -44,11 +44,11 @@ public class Customer {
 
     @ApiModelProperty("客户级别 0-普通客户，1-优质客户，2-重点客户，3-其他")
     @TableField("level")
-    private Byte level;
+    private Integer level;
 
     @ApiModelProperty("客户来源 0-个人资源，1-客户介绍，2-官网咨询，3-公众号，4-抖音，5-小红书，6-其他")
     @TableField("source")
-    private Byte source;
+    private Integer source;
 
     @ApiModelProperty("客户地址")
     @TableField("address")
@@ -56,7 +56,7 @@ public class Customer {
 
     @ApiModelProperty("跟进状态 0-新客，1-待再次沟通，2-有意向，3-转入商机，4-无效")
     @TableField("follow_status")
-    private Byte followStatus;
+    private Integer followStatus;
 
     @ApiModelProperty("下次跟进时间")
     @TableField("next_follow_status")
@@ -93,7 +93,7 @@ public class Customer {
     @ApiModelProperty("逻辑删除")
     @TableField(value = "delete_flag", fill = FieldFill.INSERT)
     @TableLogic
-    private Byte deleteFlag;
+    private Byte deleteFlag = 0;
 
     @ApiModelProperty("创建时间")
     @TableField(value = "create_time", fill = FieldFill.INSERT)
