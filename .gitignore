@@ -5,7 +5,7 @@ HELP.md
 !**/src/test/**/target/
 /src/main/resources/application.yml
 /target/classes/application.yml
-
+/src/main/resources/application-*.yml
 
 ### STS ###
 .apt_generated
@@ -23,6 +23,7 @@ HELP.md
 *.ipr
 *.log
 logs/
+target/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
