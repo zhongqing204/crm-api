@@ -2,6 +2,7 @@ package com.crm.mapper;
 
 import com.crm.entity.OperLog;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.mapstruct.Mapper;
 
 /**
  * <p>

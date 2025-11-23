@@ -188,9 +188,16 @@
             <version>3.18.3</version>
         </dependency>
 
+        <!-- Maven 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
+        <finalName>crm-api</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

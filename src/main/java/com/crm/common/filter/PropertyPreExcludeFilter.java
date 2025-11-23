@@ -1,4 +1,4 @@
-package com.crm.common.exception;
+package com.crm.common.filter;
 
 import com.alibaba.fastjson2.filter.SimplePropertyPreFilter;
 

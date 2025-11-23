@@ -1,4 +1,26 @@
 package com.crm.query;
 
-public class LeadQuery {
+import com.crm.common.model.Query;
+import io.swagger.v3.oas.annotations.media.Schema;
+
+public class LeadQuery extends Query {
+    @Schema(description="线索名称")
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getFollowStatus() {
+        return followStatus;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    @Schema(description="跟进状态")
+    private Integer followStatus;
+    @Schema(description="线索状态")
+    private Integer status;
 }
